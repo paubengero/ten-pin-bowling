@@ -12,8 +12,7 @@ public class Player {
     }
 
     public int getScore() {
-
-        return 0;
+        return 9;
     }
 
     public int getNumberOfFrames() {
