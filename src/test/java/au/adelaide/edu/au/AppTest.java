@@ -47,13 +47,6 @@ public class AppTest
     }
 
     @Test
-    public void testScoreInput(){
-
-
-    }
-
-
-    @Test
     public void testAddScore(){
         Player player1 = new Player();
         player1.setScores(1,7);
@@ -69,10 +62,6 @@ public class AppTest
     public void testFrameWithScore(){
         Player player1 = new Player();
         player1.setFrameWithScore(1,1,7);
-
     }
-
-
-
 
 }
