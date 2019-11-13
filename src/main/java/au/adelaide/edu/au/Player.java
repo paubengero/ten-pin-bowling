@@ -5,7 +5,7 @@ public class Player {
     private int roll1 = 0;
     private int roll2 = 0;
 
-    private int frameWithScore = new int[10][]
+//    private int frameWithScore = new int[10][];
 
 
     public void setThrow(int i) {
