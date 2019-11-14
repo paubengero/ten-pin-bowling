@@ -33,8 +33,7 @@ public class AppTest
     @Test
     public void testScore(){
         Player player1 = new Player();
-        player1.setThrow(2);
-        player1.setThrow(7);
+        player1.setScores(2,7);
         assertEquals(9 , player1.getScore() );
     }
 
@@ -77,6 +76,8 @@ public class AppTest
 
         assertEquals(22, player1.getRunningScore());
     }
+
+
 
 
 }

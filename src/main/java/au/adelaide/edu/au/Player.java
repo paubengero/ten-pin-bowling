@@ -33,8 +33,12 @@ public class Player {
         return this.roll1 + this.roll2;
     }
 
-    public void setFrameWithScore(int frameNumber, int roll1, int roll2) {
+    public void setFrameWithScore(int frameNumber, int roll1, int roll2)  {
         this.setScores(roll1, roll2);
+//        if (getScore() > 10){
+//            throw new Exception();
+//        }
+
         frameWithScore[frameNumber][SCORE_INDEX] =  this.getScore();
     }
 
