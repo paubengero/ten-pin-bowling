@@ -61,7 +61,22 @@ public class AppTest
     @Test
     public void testFrameWithScore(){
         Player player1 = new Player();
-        player1.setFrameWithScore(1,1,7);
+        player1.setFrameWithScore(0,1,7);
+        assertEquals(8, player1.getScoreForFrame(0));
+
+        player1.setFrameWithScore(1,9,0);
+        assertEquals(9, player1.getScoreForFrame(1));
     }
+
+    @Test
+    public void testRunningScore(){
+        Player player1 = new Player();
+        player1.setFrameWithScore(0,1,7);
+        player1.setFrameWithScore(1,0,7);
+        player1.setFrameWithScore(2,2,5);
+
+        assertEquals(22, player1.getRunningScore());
+    }
+
 
 }
